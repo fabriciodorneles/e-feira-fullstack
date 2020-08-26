@@ -1,0 +1,111 @@
+# REACT ---------------------------------------------
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+web/node_modules
+web/.pnp
+web/.pnp.js
+
+# testing
+web/coverage
+
+# production
+web/build 
+
+# misc
+web.DS_Store
+web.env.local
+web.env.development.local
+web.env.test.local
+web.env.production.local
+
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+
+# NODE ------------------------------------
+# OSX
+#
+server-e-feira/.DS_Store
+
+# Xcode
+#
+server-e-feira/build/
+server-e-feira/*.pbxuser
+server-e-feira/!default.pbxuser
+server-e-feira/*.mode1v3
+server-e-feira/!default.mode1v3
+server-e-feira/*.mode2v3
+server-e-feira/!default.mode2v3
+server-e-feira/*.perspectivev3
+server-e-feira/!default.perspectivev3
+server-e-feira/xcuserdata
+server-e-feira/*.xccheckout
+server-e-feira/*.moved-aside
+server-e-feira/DerivedData
+server-e-feira/*.hmap
+server-e-feira/*.ipa
+server-e-feira/*.xcuserstate
+
+# Android/IntelliJ
+#
+server-e-feira/build/
+server-e-feira/.idea
+server-e-feira/.gradle
+server-e-feira/local.properties
+server-e-feira/*.iml
+
+# node.js
+#
+server-e-feira/node_modules/
+server-e-feira/npm-debug.log
+server-e-feira/yarn-error.log
+server-e-feira/tmp/*
+server-e-feira/!tmp/.gitkeep
+
+# BUCK
+server-e-feira/buck-out/
+server-e-feira/.buckd/
+server-e-feira/*.keystore
+server-e-feira/!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+server-e-feira/*/fastlane/report.xml
+server-e-feira/*/fastlane/Preview.html
+server-e-feira/*/fastlane/screenshots
+
+# Bundle artifact
+server-e-feira/*.jsbundle
+
+# CocoaPods
+server-e-feira/ios/Pods/
+
+#coverage Test Log
+server-e-feira/coverage/*
+
+#env
+server-e-feira/.env
+
+#orm
+server-e-feira/ormconfig.json
+
+EXPO / REACT NATIVE ---------------------------------------------------
+mobile-go-barber/node_modules/**/*
+mobile-go-barber/.expo/*
+mobile-go-barber/npm-debug.*
+mobile-go-barber/*.jks
+mobile-go-barber/*.p8
+mobile-go-barber/*.p12
+mobile-go-barber/*.key
+mobile-go-barber/*.mobileprovision
+mobile-go-barber/*.orig.*
+mobile-go-barber/web-build/
+
+# macOS
+mobile-go-barber/.DS_Store
