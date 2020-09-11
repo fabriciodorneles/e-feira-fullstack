@@ -35,13 +35,12 @@ productsRouter.post('/', async (request, response) => {
 
 productsRouter.put('/:id', async (request, response) => {
   try {
-    const { product_id } = request.params;
+    const { id } = request.params;
     const { name, avatar, price, quantity, description } = request.body;
 
     const updateProduct = new UpdateProductService();
-
     const product = await updateProduct.execute({
-      product_id,
+      product_id: id,
       name,
       avatar,
       price,

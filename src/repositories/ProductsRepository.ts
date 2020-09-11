@@ -4,8 +4,10 @@ import Product from '../entities/Product';
 @EntityRepository(Product)
 class ProductsRepository extends Repository<Product> {
   public async findById(id: string): Promise<Product | undefined> {
-    const user = await this.findOne(id);
-    return user;
+    console.log(`dentro da findByid ${id}`);
+    const product = await this.findOne(id);
+    console.log(`dentro da findByid ${product}`);
+    return product;
   }
 }
 

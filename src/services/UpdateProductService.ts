@@ -22,11 +22,9 @@ class UpdateProductService {
   }: IRequest): Promise<Product> {
     const productsRepository = getCustomRepository(ProductsRepository);
     const product = await productsRepository.findById(product_id);
-
     if (!product) {
-      throw new Error('User not Found');
+      throw new Error('Product not Found');
     }
-
     if (name) product.name = name;
     if (avatar) product.avatar = avatar;
     if (price) product.price = price;
